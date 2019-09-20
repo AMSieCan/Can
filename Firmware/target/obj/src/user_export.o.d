@@ -1,32 +1,32 @@
-/Users/danielhowe/CodeDevelopmentFolder/TrashBinThnkg/AMSieCan/AMSieCan/target//obj/src/user_export.o: \
+c:/CodeDevelopmentFolder/Can/Firmware/target//obj/src/user_export.o: \
  src/user_export.c \
  ../../../modules/shared/stm32f2xx/inc/user_part_export.c \
  ../../../modules/shared/stm32f2xx/inc/module_user_init.h \
  ../../../dynalib/inc/dynalib.h ../../../system/inc/system_user.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/lib/gcc/arm-none-eabi/5.3.1/include/stdbool.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/lib/gcc/arm-none-eabi/5.3.1/include/stddef.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/string.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/_ansi.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/newlib.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/_newlib_version.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/config.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/machine/ieeefp.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/features.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/reent.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/_ansi.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/_types.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/machine/_types.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/machine/_default_types.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/lock.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/cdefs.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/string.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stdbool.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stddef.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\string.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_ansi.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\newlib.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_newlib_version.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\config.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\ieeefp.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\features.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\reent.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_ansi.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_types.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\_types.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\_default_types.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\lock.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\cdefs.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\string.h \
  ../../../hal/inc/core_hal.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/lib/gcc/arm-none-eabi/5.3.1/include/stdint.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/stdint.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/_intsup.h \
- /Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/_stdint.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stdint.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\stdint.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_intsup.h \
+ c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_stdint.h \
  ../../../hal/inc/watchdog_hal.h ../../../hal/inc/core_subsys_hal.h \
- ../../../hal/inc/interrupts_hal.h ../../../hal/inc/pinmap_hal.h \
+ ../../../hal/inc/interrupts_hal.h ../../../hal/shared/platforms.h \
  ../../../hal/src/stm32/interrupts_irq.h \
  ../../../services/inc/static_assert.h \
  ../../../platform/MCU/STM32F2xx/CMSIS/Device/ST/Include/stm32f2xx.h \
@@ -61,6 +61,10 @@
  ../../../platform/MCU/STM32F2xx/STM32_StdPeriph_Driver/inc/stm32f2xx_usart.h \
  ../../../platform/MCU/STM32F2xx/STM32_StdPeriph_Driver/inc/stm32f2xx_wwdg.h \
  ../../../platform/MCU/STM32F2xx/STM32_StdPeriph_Driver/inc/misc.h \
+ ../../../hal/inc/pinmap_hal.h ../../../hal/inc/hal_platform.h \
+ ../../../hal/inc/hal_platform_compat.h \
+ ../../../hal/src/stm32f2xx/pinmap_impl.h \
+ ../../../hal/src/electron/pinmap_defines.h \
  ../../../hal/inc/hal_irq_flag.h \
  ../../../modules/shared/stm32f2xx/inc/user_dynalib.h
 
@@ -72,49 +76,49 @@
 
 ../../../system/inc/system_user.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/lib/gcc/arm-none-eabi/5.3.1/include/stdbool.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stdbool.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/lib/gcc/arm-none-eabi/5.3.1/include/stddef.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stddef.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/string.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\string.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/_ansi.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_ansi.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/newlib.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\newlib.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/_newlib_version.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_newlib_version.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/config.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\config.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/machine/ieeefp.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\ieeefp.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/features.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\features.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/reent.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\reent.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/_ansi.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\_ansi.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/_types.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_types.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/machine/_types.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\_types.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/machine/_default_types.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\machine\_default_types.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/lock.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\lock.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/cdefs.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\cdefs.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/string.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\string.h:
 
 ../../../hal/inc/core_hal.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/lib/gcc/arm-none-eabi/5.3.1/include/stdint.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\lib\gcc\arm-none-eabi\5.3.1\include\stdint.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/stdint.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\stdint.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/_intsup.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_intsup.h:
 
-/Users/danielhowe/.particle/toolchains/gcc-arm/5.3.1/arm-none-eabi/include/sys/_stdint.h:
+c:\users\danielhowe\.particle\toolchains\gcc-arm\5.3.1\arm-none-eabi\include\sys\_stdint.h:
 
 ../../../hal/inc/watchdog_hal.h:
 
@@ -122,7 +126,7 @@
 
 ../../../hal/inc/interrupts_hal.h:
 
-../../../hal/inc/pinmap_hal.h:
+../../../hal/shared/platforms.h:
 
 ../../../hal/src/stm32/interrupts_irq.h:
 
@@ -191,6 +195,16 @@
 ../../../platform/MCU/STM32F2xx/STM32_StdPeriph_Driver/inc/stm32f2xx_wwdg.h:
 
 ../../../platform/MCU/STM32F2xx/STM32_StdPeriph_Driver/inc/misc.h:
+
+../../../hal/inc/pinmap_hal.h:
+
+../../../hal/inc/hal_platform.h:
+
+../../../hal/inc/hal_platform_compat.h:
+
+../../../hal/src/stm32f2xx/pinmap_impl.h:
+
+../../../hal/src/electron/pinmap_defines.h:
 
 ../../../hal/inc/hal_irq_flag.h:
 
