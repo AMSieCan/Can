@@ -14,6 +14,8 @@
  *            - Improved sampling of counter
  *            -- Debounce added in case trash is inserted for long periods of time or user has slow hands
  *            - Tamper detection added
+ * Updates: 2019-10-15
+ *            - Added logic for 5V power regulator to enable/disable distance sensor
  */
 
 //STATIC DEFINITIONS
@@ -22,20 +24,23 @@
 void setup();
 void loop();
 void logData(double p_distanceInches, int p_count, int p_tilt);
-#line 16 "c:/CodeDevelopmentFolder/Can/Firmware/src/AMSieCan.ino"
-const int SAMPLE_RATE_MINUTES = 30; // Minutes between saving data and sending to cloud
+#line 18 "c:/CodeDevelopmentFolder/Can/Firmware/src/AMSieCan.ino"
+const int SAMPLE_RATE_MINUTES = 1; // Minutes between saving data and sending to cloud
 unsigned long nextLog; // Millisecond time that log should begin after
 
 // -- HARDWARE
-// Pin assignments for the HC-SR04
+// 5 Volt power regulator enable/disable
+const int V5_EXT = D4;
+
+// Pin assignments for the HC-SR04 sensor
 const int ECHO_PIN = D6;
 const int TRIGGER_PIN = D2;
 
-// Pin assignments for the tipping mechanism
+// Pin assignments and configurations for the tipping sensor
 const int COUNTER_INT = D0;
 int counter = 0; // initialize the start value
 long lastCounterTime = millis(); // initialize the counter position to register state changes
-int debounceCount = 1000000; // mS to wait before count gets incremented again
+unsigned long debounceCount = 1200000; // 120S wait before count gets incremented again, also note: data type is set as unsigned long, inst. int, to mitigate comp errors in compiler
 
 //Pin assignments for the tamper mechanism
 const int TAMPER_PIN = A1;
@@ -46,6 +51,8 @@ int tilt = 0;
 double hcDist();
 void logData(double p_distanceInches, int p_count);
 int readCounter(int p_counterInt);
+void enable5VPower(int p_powerPin, int p_mSexcitationTime);
+void disable5VPower(int p_powerPin);
 
 void setup()
 { 
@@ -53,6 +60,9 @@ void setup()
   //    all inputs and outputs should be configured and initialized to properly states here.
   // Input: None
   // Output: None
+
+  //Setup the voltage regulator and enable
+  pinMode(V5_EXT, OUTPUT);
 
   // Setup the HC SR-04
   // Make the pins accept input, or send an output (hz)
@@ -73,15 +83,20 @@ void loop()
   // Input: None
   // Output: None
   
-
   if ( nextLog < millis() ) // Check to see if the data needs to be logged according to the current time and nextLog value
   {
     Serial.println("Logging and posting data..");
     // Setting the next time, right away
     nextLog = millis() + (SAMPLE_RATE_MINUTES * 60 * 1000);
 
+    //Turn on 5V power for 3S
+    enable5VPower(V5_EXT, 30000);
+    
     // Sampling the distance sensor
     double distanceInches = hcDist();
+
+    //Turn off 5V power
+    disable5VPower(V5_EXT);
 
     // Store Data
     logData(distanceInches, counter, tilt);
@@ -93,7 +108,7 @@ void loop()
   {
     unsigned long actualTime = nextLog - millis();
     unsigned long actualTimeSeconds = (actualTime / 1000); // Seconds
-    Serial.println("Logging in (min:sec)" + String(actualTimeSeconds / 60) +":  "+ String(actualTimeSeconds % 60));
+    Serial.println("Logging data in\t" + String(actualTimeSeconds / 60) +" Minutes:\t"+ String(actualTimeSeconds % 60) +" Seconds");
   }
 
   // Check the interupt state for an open condition of the circuit and that enough time has passed to begin counting or incrementing again
@@ -124,10 +139,10 @@ void loop()
   }
   else
   {
-    Serial.println("Current tilt reading : " + String(tamperDetection));
+    // Serial.println("Current tilt reading : " + String(tamperDetection));
   }
   
-  // End of the tunnel, its getting black..
+  // End of the tunnel, its time to go again
   delay(1000); // Wait for next time around
 }
 
@@ -181,4 +196,19 @@ int readCounter(int p_counterInt)
     return 1;   //  Return the value
   }
   return 0;
+}
+
+void enable5VPower(int p_powerPin, int p_mSexcitationTime)
+{
+  digitalWrite(p_powerPin, HIGH);
+  delay(p_mSexcitationTime); //Time in mS.  Wait at least 500mS for sensor to turn on and begin recording valid data, otherwise it might be garbage.
+  Serial.println("5V Power On");
+  return;
+}
+
+void disable5VPower(int p_powerPin)
+{
+  digitalWrite(p_powerPin, LOW);
+  Serial.println("5V Power Off");
+  return;
 }

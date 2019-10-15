@@ -1,10 +1,14 @@
 # AMSieCan
 
-A Particle project named AMSieCan
+Welcome to the README for the AMSieCan firmware project.  The files contained here are designed for Particle.io devices, however any arduino enabled microprocessor could be programmed using the code as an example.
+To begin, please see the brief review of file locations below.  The contents below have been automatically generated and updated with additional notes for the weary traveler looking for a clue
 
 ## Welcome to your project!
 
 Every new Particle project is composed of 3 important elements that you'll see have been created in your project directory for AMSieCan.
+
+## Quick help if flash doesn't work
+NOTE: If the project wont flash, check that both the cpp and ino files need to be included in the src folder under the same root, not inside another folder (/src/*), if the project is opened in another editor besides the Particle.io workbench it is possible that this structure gets destroyed, moved, or added to.
 
 #### ```/src``` folder:  
 This is the source folder that contains the firmware files for your project. It should *not* be renamed. 
