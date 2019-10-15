@@ -15,7 +15,7 @@
 //STATIC DEFINITIONS
 // -----------------
 // -- SAMPLING LOGIC
-const int SAMPLE_RATE_MINUTES = 1; // Minutes between saving data and sending to cloud
+int SAMPLE_RATE_MINUTES = 1; // Minutes between saving data and sending to cloud
 unsigned long nextLog; // Millisecond time that log should begin after
 
 // -- HARDWARE
